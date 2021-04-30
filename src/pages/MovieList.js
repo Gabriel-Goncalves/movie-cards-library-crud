@@ -37,13 +37,13 @@ class MovieList extends Component {
     // Render Loading here if the request is still happening
     return (
       <div data-testid="movie-list">
-        <Link to="/movies/new">
-          ADICIONAR CARTÃO
-        </Link>
+        <Link to="/movies/new" className="link-credit-card"><span className="teste">ADICIONAR FILME</span></Link>
         {isLoading ? (
           <Loading />
         ) : (
-          movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)
+          <div className="movie-cards-div">
+            {movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
+          </div>
         )}
       </div>
     );

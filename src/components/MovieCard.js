@@ -17,7 +17,7 @@ class MovieCard extends React.Component {
           <p className="movie-card-storyline">{storyline}</p>
         </div>
         <Rating rating={ rating } />
-        <Link to={ path }>VER DETALHES</Link>
+        <Link to={ path } className="link-details">VER DETALHES</Link>
       </div>
     );
   }
