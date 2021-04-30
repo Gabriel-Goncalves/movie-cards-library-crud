@@ -39,8 +39,8 @@ class MovieDetails extends Component {
     return (
       <div>
         <img alt="Movie Cover" src={ `../${imagePath}` } />
-        <p>{ `Título: ${title}`}</p>
-        <p>{ `Subtitle: ${subtitle}` }</p>
+        <h2>{ `Título: ${title}`}</h2>
+        <h3>{ `Subtitle: ${subtitle}` }</h3>
         <p>{ `Storyline: ${storyline}` }</p>
         <p>{ `Genre: ${genre}` }</p>
         <p>{ `Rating: ${rating}` }</p>
@@ -57,7 +57,7 @@ class MovieDetails extends Component {
 
   renderLinks(path) {
     return (
-      <div>
+      <div className="links-details">
         <Link to="/">
           VOLTAR
         </Link>
